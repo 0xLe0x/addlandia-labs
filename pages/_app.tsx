@@ -3,6 +3,8 @@ import 'styles/global.css'
 import { IBM_Plex_Mono, Inter, PT_Serif } from '@next/font/google'
 import { AppProps } from 'next/app'
 
+import Layout from '@/components/layout/Layout'
+
 const mono = IBM_Plex_Mono({
   variable: '--font-mono',
   subsets: ['latin'],
@@ -35,7 +37,9 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </style>
 
-      <Component {...pageProps} />
+      <Layout hasAnimatedLogo={pageProps.hasAnimatedLogo}>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }
