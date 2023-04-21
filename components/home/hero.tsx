@@ -80,7 +80,7 @@ const Hero = () => {
       />
 
       <div
-        className="pointer-events-none absolute inset-x-0 mx-auto flex h-[100px] max-w-[910px] flex-col items-center justify-center gap-5 px-4 sm:px-6 lg:px-8"
+        className="pointer-events-none absolute inset-x-0 mx-auto flex h-[100px] max-w-[910px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
         style={{
           transform: `translateY(${
             ((windowSize.height || 0) - 100) / 2 + (scrollPosition || 0) / 2
@@ -91,7 +91,7 @@ const Hero = () => {
         }}
       >
         <div className="flex justify-center">
-          <span className="flex flex-col justify-center gap-1 rounded-full border px-4 py-2 md:flex-row">
+          <span className="flex flex-col justify-center gap-1 rounded-full border px-4 py-2 md:flex-row text-lg">
             <p>Blockchain value creation for businesses.</p>
             <Button href="#" primary noPadding showArrow>
               Read more

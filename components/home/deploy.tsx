@@ -2,33 +2,28 @@ import {
   ArrowPathIcon,
   CloudArrowUpIcon,
   LockClosedIcon,
-} from "@heroicons/react/20/solid";
+} from '@heroicons/react/20/solid'
 
-import Container from "../common/Container";
-import DeployCard from "../common/DeployCard";
+import Container from '../common/Container'
+import DeployCard from '../common/DeployCard'
 
 const Deploy = () => {
   return (
     <Container className="pb-32 pt-40">
-      <div className="flex flex-col justify-center gap-4">
-        <div className="text-center text-lg font-semibold text-primary">
+      <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
+        <h4 className="text-center text-lg font-semibold text-primary">
           Deploy faster
-        </div>
-        <h2 className="text-center text-3xl sm:text-5xl font-bold">
+        </h4>
+        <h2 className="text-center text-3xl font-bold sm:text-5xl">
           Everything you need to deploy your app
         </h2>
-        <div className="text-2xl">
-          <p className="py-2 text-center">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget
-          </p>
-          <p className="py-2 text-center">
-            egestas a elementum pulvinar et feugiat blandit at. In mi viverra
-            elit nunc.
-          </p>
-        </div>
+        <p className="py-2 text-center text-2xl leading-10">
+          Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+          Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+          In mi viverra elit nunc.
+        </p>
       </div>
-      <div className="flex flex-col md:flex-row text-lg gap-12 pt-28">
+      <div className="flex flex-col gap-12 pt-28 text-lg md:flex-row">
         <DeployCard
           icon={<CloudArrowUpIcon className="h-6 w-6 text-primary" />}
           title="Push to deploy"
@@ -54,7 +49,7 @@ const Deploy = () => {
         </DeployCard>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default Deploy;
+export default Deploy
