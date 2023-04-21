@@ -23,6 +23,10 @@ body,
   margin: 0;
 }
 
+p {
+  color: #4E5662;
+}
+
 @font-face {
   font-family: "Graphik";
   font-style: normal;

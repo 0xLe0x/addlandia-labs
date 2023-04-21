@@ -10,7 +10,7 @@ const DeployCard: FC<DeployCardProps> = ({ icon, title, href, children }) => {
         {icon}
         <h3 className="font-semibold">{title}</h3>
       </div>
-      <div className="flex-grow">{children}</div>
+      <p className="flex-grow">{children}</p>
       <div>
         <Button href={href} primary showArrow noPadding>
           Learn more
