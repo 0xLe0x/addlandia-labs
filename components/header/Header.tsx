@@ -106,7 +106,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
             </span>
           </Link>
         </div>
-        <div className="hidden gap-12 sm:flex">
+        <div className="hidden gap-12 sm:flex text-lg font-semibold">
           <Link
             className="relative leading-none text-text transition-all duration-500 after:absolute after:inset-x-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-primary after:transition-all after:duration-500 hover:text-primary hover:after:w-full hover:after:bg-primary"
             href="#"

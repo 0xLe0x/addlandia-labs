@@ -45,8 +45,8 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-white">
-      <Transition
+    <div className="relative h-screen w-full">
+      {/* <Transition
         as="div"
         className="fixed z-20 flex h-full w-full items-center justify-center bg-primary text-4xl font-bold leading-none md:text-6xl lg:text-9xl"
         show={!hasFluidLoaded}
@@ -58,8 +58,8 @@ const Hero = () => {
         leaveTo="translate-y-[100vh]"
       >
         Addlandia Labs
-      </Transition>
-
+      </Transition> */}
+{/* 
       <div
         ref={loaderRef}
         className={classNames(
@@ -69,18 +69,18 @@ const Hero = () => {
             'opacity-100': !hasLoaderLoaded,
           }
         )}
-      />
+      /> */}
 
-      <canvas
+      {/* <canvas
         ref={canvasRef}
         className={classNames('bg-neutral-800 absolute h-full w-full blur-sm', {
           'opacity-0': !hasMounted,
           'opacity-100': hasMounted,
         })}
-      />
+      /> */}
 
       <div
-        className="pointer-events-none absolute inset-x-0 mx-auto flex h-[100px] max-w-[910px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
+        className="absolute inset-x-0 mx-auto flex h-[100px] max-w-[910px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
         style={{
           transform: `translateY(${
             ((windowSize.height || 0) - 100) / 2 + (scrollPosition || 0) / 2
@@ -91,7 +91,7 @@ const Hero = () => {
         }}
       >
         <div className="flex justify-center">
-          <span className="flex flex-col justify-center gap-1 rounded-full border px-4 py-2 md:flex-row text-lg">
+          <span className="flex flex-col justify-center gap-1 rounded-full border px-4 py-2 text-md text-center md:text-lg md:flex-row">
             <p>Blockchain value creation for businesses.</p>
             <Button href="#" primary noPadding showArrow>
               Read more
@@ -101,7 +101,7 @@ const Hero = () => {
         <h1 className="text-center text-4xl font-bold sm:text-7xl">
           We build your dreams
         </h1>
-        <p className="text-center text-lg sm:text-2xl leading-8 sm:leading-[44px]">
+        <p className="text-center text-lg leading-8 sm:text-2xl sm:leading-[44px]">
           We specialise in crafting innovative blockchain-enabled web platforms
           and Web3 services. We take your ideas to the next level, so dream big!
         </p>
