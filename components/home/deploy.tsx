@@ -9,7 +9,7 @@ import DeployCard from '../common/DeployCard'
 
 const Deploy = () => {
   return (
-    <Container className="pb-32 pt-40">
+    <Container className="pt-10 pb-20 md:pb-32 md:pt-40">
       <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
         <h4 className="text-center text-lg font-semibold text-primary">
           Deploy faster

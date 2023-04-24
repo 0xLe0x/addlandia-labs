@@ -36,7 +36,7 @@ const profiles = [
 
 const Team = () => {
   return (
-    <Container className="py-40 text-center md:text-left">
+    <Container className="py-20 md:py-40 text-center md:text-left">
       <h2 className="mb-6 text-3xl font-bold sm:text-5xl">Our team</h2>
       <p className="text-xl leading-9">
         We&lsquo;re a dynamic group of individuals who are passionate about what

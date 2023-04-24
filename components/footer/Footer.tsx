@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Container from '@/components/common/Container'
 
 const Footer = () => (
-  <footer className="py-20">
+  <footer className="py-10 md:py-20">
     <Container>
       <h3 className="mb-16 text-center text-2xl font-semibold">
         Trusted by the world&lsquo;s most innovative teams
@@ -23,7 +23,7 @@ const Footer = () => (
       </div>
     </Container>
     <Container className="flex justify-center">
-      <div className="flex max-w-[1100px] flex-col items-center gap-10 py-60 lg:flex-row lg:items-stretch">
+      <div className="flex max-w-[1100px] flex-col items-center gap-10 py-32 md:py-60 lg:flex-row lg:items-stretch">
         <Image
           src="/images/photo_7.jpg"
           className="h-auto !w-[360px] rounded-[24px]"
