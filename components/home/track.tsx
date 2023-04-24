@@ -16,7 +16,7 @@ const TrackRecord = () => {
         />
       </div>
       <div className="flex basis-1/2 items-center justify-center sm:px-10 lg:px-20 xl:px-32">
-        <div className="flex flex-col gap-4 max-w-3xl">
+        <div className="flex flex-col gap-4 max-w-3xl text-center md:text-left">
           <div className="text-lg font-semibold text-primary">
             Our track record
           </div>

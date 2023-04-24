@@ -79,7 +79,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
       ref={headerRef}
     >
       <div className="relative mx-auto flex max-w-[1600px] items-center justify-center py-8 px-4 sm:px-6 lg:py-8 lg:px-8">
-        <div className="absolute w-full left-9">
+        <div className="absolute left-9 w-full">
           <Link href="/" className="flex items-end gap-2">
             <div
               ref={lottieRef}
@@ -106,7 +106,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
             </span>
           </Link>
         </div>
-        <div className="hidden gap-12 sm:flex text-lg font-semibold">
+        <div className="hidden gap-12 text-lg font-semibold sm:flex">
           <Link
             className="relative leading-none text-text transition-all duration-500 after:absolute after:inset-x-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-primary after:transition-all after:duration-500 hover:text-primary hover:after:w-full hover:after:bg-primary"
             href="#"

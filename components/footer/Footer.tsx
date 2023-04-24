@@ -32,7 +32,7 @@ const Footer = () => (
           alt="photo_7"
         />
         <div className="flex flex-col gap-5 py-3">
-          <h2 className="flex-grow text-xl font-semibold leading-9 sm:text-3xl sm:leading-[46px]">
+          <h2 className="flex-grow text-center text-xl font-semibold leading-9 sm:text-3xl sm:leading-[46px] md:text-left">
             Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco
             consectetur ipsum elit consequat. Elit sunt proident ea nulla ad
             nulla dolore ad pariatur tempor non. Sint veniam minim et ea.
@@ -46,7 +46,7 @@ const Footer = () => (
     </Container>
     <Container>
       <div className="flex flex-col gap-20 md:flex-row">
-        <div className="basis-2/5">
+        <div className="basis-2/5 text-center md:text-left">
           <h2 className="mb-7 text-2xl font-bold">
             Frequently asked questions
           </h2>

@@ -9,40 +9,40 @@ import { useMounting, useWindowUtils } from '../../app/app.hooks'
 import fluid from '../../lib/fluid'
 
 const Hero = () => {
-  const [hasLoaderLoaded, setLoaderLoaded] = useState(false)
-  const [hasFluidLoaded, setFluidLoaded] = useState(false)
-  const [shouldShowTypewriter, setShowTypewriter] = useState(false)
+  // const [hasLoaderLoaded, setLoaderLoaded] = useState(false)
+  // const [hasFluidLoaded, setFluidLoaded] = useState(false)
+  // const [shouldShowTypewriter, setShowTypewriter] = useState(false)
 
-  const canvasRef = useRef<HTMLCanvasElement | null>(null)
-  const loaderRef = useRef<HTMLDivElement | null>(null)
+  // const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  // const loaderRef = useRef<HTMLDivElement | null>(null)
 
-  const hasMounted = useMounting()
-  const { scrollPosition, size: windowSize } = useWindowUtils()
+  // const hasMounted = useMounting()
+  // const { scrollPosition, size: windowSize } = useWindowUtils()
 
-  const windowHeightPercentage =
-    ((scrollPosition || 0) / (windowSize.height || 0)) * 100
+  // const windowHeightPercentage =
+  //   ((scrollPosition || 0) / (windowSize.height || 0)) * 100
 
-  const handleButtonClick = () => {
-    window.scrollTo({ top: windowSize.height, behavior: 'smooth' })
-  }
+  // const handleButtonClick = () => {
+  //   window.scrollTo({ top: windowSize.height, behavior: 'smooth' })
+  // }
 
-  useEffect(() => {
-    if (canvasRef.current !== null) {
-      fluid(canvasRef.current)
-      setTimeout(() => {
-        setFluidLoaded(true)
+  // useEffect(() => {
+  //   if (canvasRef.current !== null) {
+  //     fluid(canvasRef.current)
+  //     setTimeout(() => {
+  //       setFluidLoaded(true)
 
-        if (loaderRef.current !== null) {
-          loaderRef.current.style.visibility = 'hidden'
-        }
-      }, 2000)
-      setTimeout(() => setShowTypewriter(true), 4000)
-    }
-  }, [canvasRef, hasMounted])
+  //       if (loaderRef.current !== null) {
+  //         loaderRef.current.style.visibility = 'hidden'
+  //       }
+  //     }, 2000)
+  //     setTimeout(() => setShowTypewriter(true), 4000)
+  //   }
+  // }, [canvasRef, hasMounted])
 
-  useEffect(() => {
-    setLoaderLoaded(true)
-  }, [])
+  // useEffect(() => {
+  //   setLoaderLoaded(true)
+  // }, [])
 
   return (
     <div className="relative h-screen w-full">
@@ -59,7 +59,7 @@ const Hero = () => {
       >
         Addlandia Labs
       </Transition> */}
-{/* 
+      {/* 
       <div
         ref={loaderRef}
         className={classNames(
@@ -80,18 +80,18 @@ const Hero = () => {
       /> */}
 
       <div
-        className="absolute inset-x-0 mx-auto flex h-[100px] max-w-[910px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
-        style={{
-          transform: `translateY(${
-            ((windowSize.height || 0) - 100) / 2 + (scrollPosition || 0) / 2
-          }px)`,
-          opacity: `${
-            100 - (windowHeightPercentage <= 100 ? windowHeightPercentage : 100)
-          }%`,
-        }}
+        className="absolute inset-x-0 mx-auto flex h-screen max-w-[910px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
+        // style={{
+        //   transform: `translateY(${
+        //     ((windowSize.height || 0) - 100) / 2 + (scrollPosition || 0) / 2
+        //   }px)`,
+        //   opacity: `${
+        //     100 - (windowHeightPercentage <= 100 ? windowHeightPercentage : 100)
+        //   }%`,
+        // }}
       >
         <div className="flex justify-center">
-          <span className="flex flex-col justify-center gap-1 rounded-full border px-4 py-2 text-md text-center md:text-lg md:flex-row">
+          <span className="text-md flex flex-col justify-center gap-1 rounded-full border px-4 py-2 text-center md:flex-row md:text-lg">
             <p>Blockchain value creation for businesses.</p>
             <Button href="#" primary noPadding showArrow>
               Read more
@@ -115,7 +115,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="absolute inset-x-0 bottom-32 z-10 flex justify-center md:hidden"
         style={{
           opacity: `${
@@ -131,7 +131,7 @@ const Hero = () => {
           Explore
           <ArrowDownIcon className="h-4 w-4" />
         </button>
-      </div>
+      </div> */}
 
       {/* <div
         className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-neutral-800 to-transparent"
