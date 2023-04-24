@@ -109,7 +109,7 @@ const Hero = () => {
           <Button onClick={() => {}} fill primary>
             Contact us
           </Button>
-          <Button href="#" showArrow>
+          <Button href="#deploy" showArrow>
             Learn more
           </Button>
         </div>
