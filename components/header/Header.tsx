@@ -95,7 +95,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
               className={classNames({
                 hidden: hasAnimatedLogo,
               })}
-              src="/images/logo.png"
+              src="/logo.png"
               alt="Addlandia Labs"
               width={49}
               height={35}
