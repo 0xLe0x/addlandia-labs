@@ -4,26 +4,8 @@ import Container from '@/components/common/Container'
 
 const Footer = () => (
   <footer className="pt-10 md:pt-20">
-    <Container>
-      <h3 className="mb-16 text-center text-2xl font-semibold">
-        Trusted by the world&lsquo;s most innovative teams
-      </h3>
-      <div className="flex flex-wrap justify-center gap-y-4">
-        {Array(5)
-          .fill(0)
-          .map((val, i) => (
-            <Image
-              src={`/images/brand_${i + 1}.png`}
-              fill
-              className="!static mx-auto !h-[70px] !w-auto"
-              alt={`brand_${i}`}
-              key={`brand_${i}`}
-            />
-          ))}
-      </div>
-    </Container>
-    <Container className="flex justify-center">
-      <div className="flex max-w-[1100px] flex-col items-center gap-10 py-32 md:py-60 lg:flex-row lg:items-stretch">
+    {/* <Container className="flex justify-center">
+      <div className="flex max-w-[1100px] flex-col items-center gap-10 py-32 md:py-60 lg:flex-row">
         <Image
           src="/images/photo_7.jpg"
           className="h-auto !w-[360px] rounded-[24px]"
@@ -43,15 +25,15 @@ const Footer = () => (
           </div>
         </div>
       </div>
-    </Container>
-    <Container className='pb-20'>
+    </Container> */}
+    {/* <Container className='pb-20'>
       <div className="flex flex-col gap-20 md:flex-row">
         <div className="basis-2/5 text-center md:text-left">
           <h2 className="mb-7 text-2xl font-bold">
             Frequently asked questions
           </h2>
           <p className="text-lg leading-8">
-            Can&lsquo;t find the answer you&lsquo;re looking for? Reach out to
+            Can&apos;t find the answer you&apos;re looking for? Reach out to
             our&nbsp;
             <a href="#" className="text-primary">
               customer support
@@ -69,10 +51,10 @@ const Footer = () => (
           </div>
           <div className="text-lg">
             <h4 className="mb-4 font-semibold">
-              What&lsquo;s the best thing about Switzerland?
+              What&apos;s the best thing about Switzerland?
             </h4>
             <p className="leading-8">
-              I don&lsquo;t know, but the flag is a big plus. Lorem ipsum dolor
+              I don&apos;t know, but the flag is a big plus. Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Quas cupiditate laboriosam
               fugiat.
             </p>
@@ -91,13 +73,13 @@ const Footer = () => (
               Why do you never see elephants hiding in trees?
             </h4>
             <p className="leading-8">
-              Because they&lsquo;re so good at it. Lorem ipsum dolor sit amet
+              Because they&apos;re so good at it. Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
             </p>
           </div>
         </div>
       </div>
-    </Container>
+    </Container> */}
     <div className="bg-gray-50">
       <Container>
         <h2 id="footer-heading" className="sr-only">

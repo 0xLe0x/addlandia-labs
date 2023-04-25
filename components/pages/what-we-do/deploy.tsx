@@ -4,12 +4,12 @@ import {
   LockClosedIcon,
 } from '@heroicons/react/20/solid'
 
-import Container from '../common/Container'
-import DeployCard from '../common/DeployCard'
+import Container from '../../common/Container'
+import DeployCard from '../../common/DeployCard'
 
-const Deploy = () => {
+const DeploySection = () => {
   return (
-    <div id="deploy">
+    <div>
       <Container className="py-20 md:pb-32 md:pt-40">
         <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
           <h4 className="text-center text-lg font-semibold text-primary">
@@ -27,26 +27,33 @@ const Deploy = () => {
         <div className="flex flex-col gap-12 pt-28 text-lg md:flex-row">
           <DeployCard
             icon={<CloudArrowUpIcon className="h-6 w-6 text-primary" />}
-            title="Push to deploy"
+            title="Design"
           >
-            Commondo nec sagittis tortor mauris sed. Turpis tortor quis
-            scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus
-            volutpat eu. Phasellus praesent ligula sit faucibus.
+            There should be no limits on your own website, so we don&apos;t do
+            watered down web design, Our team of award-winning designers brings
+            decades of experience to the table, enabling us to take on any
+            project - from enhancing existing UX/UI design to creating new
+            concepts from scratch.
           </DeployCard>
           <DeployCard
             icon={<LockClosedIcon className="h-6 w-6 text-primary" />}
-            title="SSL certificates"
+            title="Develop"
           >
-            Pellentesque enim a commodo malesuada turpis eleifend risus.
-            Facilisis donec placerat sapien consequat tempor fermentum nibh.
+            Our specialist developers are experts in web3 technologies and can
+            bring your concept to life using seamless functionality and best
+            practices. From building bespoke platforms to integrating
+            cutting-edge features, we have the expertise and resources to handle
+            any project, big or small.
           </DeployCard>
           <DeployCard
             icon={<ArrowPathIcon className="h-6 w-6 text-primary" />}
-            title="Simple queues"
+            title="Advise"
           >
-            Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur
-            viverra suspendisse iaculis eget. Nec mollis placerat ultricies
-            euismod ut condimentum.
+            Not ready to get started just yet? Don&apos;t worry, we are here to
+            help you understand the fast-moving landscape of web3. Whether you
+            are looking for advice on how to enhance your existing business with
+            blockchain technologies, or you are seeking advice on the regulatory
+            landscape - we can help.
           </DeployCard>
         </div>
       </Container>
@@ -54,4 +61,4 @@ const Deploy = () => {
   )
 }
 
-export default Deploy
+export default DeploySection

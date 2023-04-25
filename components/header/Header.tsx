@@ -1,9 +1,10 @@
-import Link from 'next/link'
 import classNames from 'classnames'
-import type { FC } from 'react'
-import { useEffect, useRef, useState } from 'react'
 import lottie, { AnimationItem } from 'lottie-web'
 import Image from 'next/image'
+import Link from 'next/link'
+import type { FC } from 'react'
+import { useEffect, useRef, useState } from 'react'
+
 import { useElementUtils, useWindowUtils } from '../../app/app.hooks'
 import type { HeaderProps } from './Header.def'
 
@@ -109,13 +110,13 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
         <div className="hidden gap-12 text-lg font-semibold sm:flex">
           <Link
             className="relative leading-none text-text transition-all duration-500 after:absolute after:inset-x-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-primary after:transition-all after:duration-500 hover:text-primary hover:after:w-full hover:after:bg-primary"
-            href="#"
+            href="/who-we-are"
           >
             Who We Are
           </Link>
           <Link
             className="relative leading-none text-text transition-all duration-500 after:absolute after:inset-x-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-primary after:transition-all after:duration-500 hover:text-primary hover:after:w-full hover:after:bg-primary"
-            href="#"
+            href="/what-we-do"
           >
             What We Do
           </Link>

@@ -1,5 +1,5 @@
-import Container from '../common/Container'
-import ProfileCard from '../common/ProfileCard'
+import Container from '../../common/Container'
+import ProfileCard from '../../common/ProfileCard'
 
 const profiles = [
   {
@@ -34,12 +34,12 @@ const profiles = [
   },
 ]
 
-const Team = () => {
+const TeamSection = () => {
   return (
-    <Container className="py-20 md:py-40 text-center md:text-left">
+    <Container className="pt-20 md:pt-40 text-center md:text-left">
       <h2 className="mb-6 text-3xl font-bold sm:text-5xl">Our team</h2>
       <p className="text-xl leading-9">
-        We&lsquo;re a dynamic group of individuals who are passionate about what
+        We&apos;re a dynamic group of individuals who are passionate about what
         we do
       </p>
       <p className="text-xl leading-9">
@@ -54,4 +54,4 @@ const Team = () => {
   )
 }
 
-export default Team
+export default TeamSection

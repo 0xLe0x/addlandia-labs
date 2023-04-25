@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from 'react'
 
 import Button from '@/components/common/Button'
 
-import { useMounting, useWindowUtils } from '../../app/app.hooks'
-import fluid from '../../lib/fluid'
+import { useMounting, useWindowUtils } from '../../../app/app.hooks'
+import fluid from '../../../lib/fluid'
 
-const Hero = () => {
+const HeroSection = () => {
   // const [hasLoaderLoaded, setLoaderLoaded] = useState(false)
   // const [hasFluidLoaded, setFluidLoaded] = useState(false)
   // const [shouldShowTypewriter, setShowTypewriter] = useState(false)
@@ -145,4 +145,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroSection

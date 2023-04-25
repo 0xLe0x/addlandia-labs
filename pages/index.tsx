@@ -1,20 +1,40 @@
+import groq from 'groq'
 import Head from 'next/head'
 
-import Deploy from '@/components/home/deploy'
-import Hero from '@/components/home/hero'
-import Team from '@/components/home/team'
-import TrackRecord from '@/components/home/track'
+import BlogSection from '@/components/common/Blog'
+import { PostProps } from '@/components/common/Blog/def'
+import BrandSection from '@/components/common/Brand'
+import { DeploySection,HeroSection, TrackRecordSection } from '@/components/pages/home'
+import { client } from '@/sanity/lib/client'
 
-export default function IndexPage() {
+export default function IndexPage({ posts }: { posts: PostProps[] }) {
   return (
     <>
       <Head>
         <title>Addlandia Labs</title>
       </Head>
-      <Hero />
-      <Deploy />
-      <TrackRecord />
-      <Team />
+      <HeroSection />
+      <DeploySection />
+      <TrackRecordSection />
+      <BrandSection />
+      <BlogSection posts={posts} />
     </>
   )
+}
+
+export async function getStaticProps() {
+  const posts: Array<any> = await client.fetch(groq`
+      *[_type == "post" && publishedAt < now()] | order(publishedAt desc){
+        ...,
+        "name": author->name,
+        "categories": categories[]->title,
+        "authorImage": author->image
+      }
+    `)
+
+  return {
+    props: {
+      posts: posts.slice(0, 3),
+    },
+  }
 }

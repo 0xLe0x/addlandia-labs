@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import Container from '../common/Container'
-import TrackRecordCard from '../common/TrackRecordCard'
+import Container from '../../common/Container'
+import TrackRecordCard from '../../common/TrackRecordCard'
 
-const TrackRecord = () => {
+const TrackRecordSection = () => {
   return (
     <Container className="flex flex-col gap-10 px-0 lg:flex-row lg:gap-0">
       <div className="w-full basis-1/2">
@@ -42,4 +42,4 @@ const TrackRecord = () => {
   )
 }
 
-export default TrackRecord
+export default TrackRecordSection
