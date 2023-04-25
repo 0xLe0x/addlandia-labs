@@ -1,39 +1,51 @@
 import imageUrlBuilder from '@sanity/image-url'
 import groq from 'groq'
 
+import Container from '@/components/common/Container'
+
 import { client } from '../../sanity/lib/client'
 
-function urlFor (source) {
+function urlFor(source) {
   return imageUrlBuilder(client).image(source)
 }
 
-const Post = ({post}) => {
+const Post = ({ post }) => {
   const {
     title = 'Missing title',
     name = 'Missing name',
     categories,
-    authorImage
-  } = post
+    authorImage,
+  } = post ?? {
+    title: 'Missing title',
+    name: 'Missing name',
+    categories: null,
+    authorImage: {
+      _type: 'image',
+      asset: [],
+    },
+  }
   return (
-    <article>
-      <h1>{title}</h1>
-      <span>By {name}</span>
-      {categories && (
-        <ul>
-          Posted in
-          {categories.map(category => <li key={category}>{category}</li>)}
-        </ul>
+    <>
+      {post && (
+        <Container className="pt-24">
+          <h1>{title}</h1>
+          <span>By {name}</span>
+          {categories && (
+            <ul>
+              Posted in
+              {categories.map((category) => (
+                <li key={category}>{category}</li>
+              ))}
+            </ul>
+          )}
+          {authorImage && (
+            <div>
+              <img src={urlFor(authorImage).width(50).url()} />
+            </div>
+          )}
+        </Container>
       )}
-      {authorImage && (
-        <div>
-          <img
-            src={urlFor(authorImage)
-              .width(50)
-              .url()}
-          />
-        </div>
-      )}
-    </article>
+    </>
   )
 }
 
@@ -50,19 +62,18 @@ export async function getStaticPaths() {
   )
 
   return {
-    paths: paths.map((slug) => ({params: {slug}})),
+    paths: paths.map((slug) => ({ params: { slug } })),
     fallback: true,
   }
 }
 
 export async function getStaticProps(context) {
-  // It's important to default the slug so that it doesn't return "undefined"
-  const { slug = "" } = context.params
+  const { slug = '' } = context.params
   const post = await client.fetch(query, { slug })
   return {
     props: {
-      post
-    }
+      post,
+    },
   }
 }
 export default Post

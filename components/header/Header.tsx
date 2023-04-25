@@ -79,7 +79,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
       )}
       ref={headerRef}
     >
-      <div className="relative mx-auto flex max-w-[1600px] items-center justify-center py-8 px-4 sm:px-6 lg:py-8 lg:px-8">
+      <div className="relative mx-auto flex max-w-[1600px] items-center justify-center py-8 px-4 sm:px-6 lg:px-8">
         <div className="absolute left-9 w-full">
           <Link href="/" className="flex items-end gap-2">
             <div
