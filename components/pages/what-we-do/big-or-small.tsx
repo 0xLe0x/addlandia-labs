@@ -15,15 +15,15 @@ const BigOrSmallSection = () => {
       <Container className="py-20 md:pb-32 md:pt-40">
         <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
           <Typography variant="h6" className="text-center text-primary">
-            Deploy faster
+            We do it all
           </Typography>
           <Typography variant="h3" className="text-center">
-            Everything you need to deploy your app
+            Big or small
           </Typography>
           <Typography variant="subtitle1" className="py-2 text-center">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Our team has worked across technology sectors, stacks and chains for
+            decades. Our passion is focusing that expertise into results for
+            you.
           </Typography>
         </div>
         <div className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2">
@@ -31,35 +31,36 @@ const BigOrSmallSection = () => {
             icon={
               <CloudArrowUpIcon className="h-6 w-6 text-white sm:h-[30px] sm:w-[30px]" />
             }
-            title="Push to deploy"
+            title="Web3 Platforms"
             large
           >
-            Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse
-            semper morbi. Odio urna massa nunc massa.
+            Adoption of Web3 has never been greater. We are here to support you
+            in understanding how blockchain can enhance your business.
           </ServiceCard>
           <ServiceCard
             icon={<LockClosedIcon className="h-[30px] w-[30px] text-white" />}
-            title="SSL certificates"
+            title="Web2 Platforms"
             large
           >
-            Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget.
-            Sem sodales gravida quam turpis enim lacus amet.
+            Whilst we are specialists in Web3, our roots are in traditional web
+            development. If your idea doesn&apos;t utilise blockchain,
+            that&apos;s ok!
           </ServiceCard>
           <ServiceCard
             icon={<ArrowPathIcon className="h-[30px] w-[30px] text-white" />}
-            title="Simple queues"
+            title="NFT Projects"
             large
           >
-            Quisque est vel vulputate cursus. Risus proin diam nunc commodo.
-            Lobortis auctor congue commodo diam neque.
+            From growing a community to minting out your project, we know how to
+            connect your idea with NFT collectors.
           </ServiceCard>
           <ServiceCard
             icon={<FingerPrintIcon className="h-[30px] w-[30px] text-white" />}
-            title="Advanced security"
+            title="Blockchain Games"
             large
           >
-            Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis
-            aliquet hac quis. Id hac maecenas ac donec pharetra eget.
+            We have in-house engineers who are experts in developing fun and
+            immersive Web3 and mobile games
           </ServiceCard>
         </div>
       </Container>

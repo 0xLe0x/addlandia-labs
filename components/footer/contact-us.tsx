@@ -2,17 +2,17 @@ import Button from '@/components/common/Button'
 import Container from '@/components/common/Container'
 import Typography from '@/components/common/Typography'
 
-const ContactUsPage = () => {
+const ContactUsSection = () => {
   return (
     <div className="bg-[#E0E7FF]">
       <Container className="py-10 sm:py-40">
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-8">
+        <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
           <div>
-            <Typography variant="h3" className="text-center sm:text-left">
+            <Typography variant="h3" className="mb-2 text-center sm:text-left">
               Ready to dive in?
             </Typography>
             <Typography variant="h3" className="text-center sm:text-left">
-              Start your free trial today.
+              Share your idea with us today
             </Typography>
           </div>
           <div>
@@ -26,4 +26,4 @@ const ContactUsPage = () => {
   )
 }
 
-export default ContactUsPage
+export default ContactUsSection

@@ -81,7 +81,7 @@ const HeroSection = () => {
       /> */}
 
       <div
-        className="absolute inset-x-0 mx-auto flex h-screen max-w-[910px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
+        className="absolute inset-x-0 mx-auto flex h-screen max-w-[1100px] flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-8"
         // style={{
         //   transform: `translateY(${
         //     ((windowSize.height || 0) - 100) / 2 + (scrollPosition || 0) / 2
@@ -102,14 +102,12 @@ const HeroSection = () => {
           </span>
         </div>
         <Typography variant="h1" className="text-center">
-          We build your dreams
+          We build dreams
         </Typography>
-        <Typography
-          variant="subtitle1"
-          className="text-center"
-        >
-          We specialise in crafting innovative blockchain-enabled web platforms
-          and Web3 services. We take your ideas to the next level, so dream big!
+        <Typography variant="subtitle1" className="text-center">
+          We are a digital product studio specialising in crafting innovative
+          blockchain-enabled solutions across web and mobile. We help innovators
+          bring new ideas to life.
         </Typography>
         <div className="flex gap-2">
           <Button href="#contact" fill primary>

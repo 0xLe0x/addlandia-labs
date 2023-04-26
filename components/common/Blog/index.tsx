@@ -22,10 +22,10 @@ const BlogSection = ({ posts }: { posts: PostProps[] }) => {
         variant="h3"
         className="mb-6 text-center text-3xl font-bold sm:text-5xl"
       >
-        From the blog
+        On our mind
       </Typography>
       <Typography variant="subtitle2" className="text-center text-xl leading-9">
-        Learn how to grow your business with our expert advice.
+        A collection of thoughts from Addlandia Labs
       </Typography>
       <div className="mt-10 grid gap-5 lg:mt-24 lg:grid-cols-3">
         {posts.length > 0 &&

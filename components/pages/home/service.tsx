@@ -17,47 +17,48 @@ const ServiceSection = () => {
             Complete service
           </Typography>
           <Typography variant="h3" className="text-center">
-            Everything you need in one place
+            Build the right product, faster
           </Typography>
           <Typography variant="subtitle2" className="py-2 text-center">
-            Whether it is a web design makeover, development of an exciting new
-            web platform or you are looking for expert advice, we are here to
-            support you.
+            We translate your business needs into apps, software and branded
+            websites that deliver powerful functionality with beautiful UX/UI
           </Typography>
         </div>
         <div className="flex flex-col gap-12 pt-28 text-lg md:flex-row">
           <ServiceCard
             icon={<PencilIcon className="h-6 w-6 text-primary" />}
-            title="Design"
+            title="Product Design"
             href="#"
           >
             There should be no limits on your own website, so we don&apos;t do
-            watered down web design, Our team of award-winning designers brings
+            watered down web design. Our team of award-winning designers brings
             decades of experience to the table, enabling us to take on any
-            project - from enhancing existing UX/UI design to creating new
+            project &minus; from enhancing existing UX/UI design to creating new
             concepts from scratch.
           </ServiceCard>
           <ServiceCard
             icon={<CodeBracketSquareIcon className="h-6 w-6 text-primary" />}
-            title="Develop"
+            title="Product Development"
             href="#"
           >
-            Our specialist developers are experts in web3 technologies and can
-            bring your concept to life using seamless functionality and best
-            practices. From building bespoke platforms to integrating
-            cutting-edge features, we have the expertise and resources to handle
-            any project, big or small.
+            Trust our expert developers to bring your Web3 vision to life with
+            seamless functionality and cutting-edge features. From bespoke
+            platforms to complex integrations, we have the skills and resources
+            to handle any project, big or small. Our commitment to best
+            practices ensures that your platform is user-friendly, visually
+            stunning, and optimized for success.
           </ServiceCard>
           <ServiceCard
             icon={<ChatBubbleLeftRightIcon className="h-6 w-6 text-primary" />}
-            title="Advise"
+            title="Product Strategy"
             href="#"
           >
-            Not ready to get started just yet? Don&apos;t worry, we are here to
-            help you understand the fast-moving landscape of web3. Whether you
-            are looking for advice on how to enhance your existing business with
-            blockchain technologies, or you are seeking advice on the regulatory
-            landscape - we can help.
+            Not sure where to start with web3? We can help. Whether you need
+            advice on integrating blockchain tech into your business or
+            navigating regulatory challenges, our experts offer tailored
+            solutions to help you succeed in the digital world. Trust us to
+            guide you through the fast-moving Web3 landscape and empower you to
+            make informed decisions that drive your success.
           </ServiceCard>
         </div>
       </Container>

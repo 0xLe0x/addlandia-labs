@@ -7,32 +7,39 @@ const MissionSection = () => (
       <Typography variant="h3" className="mb-6">
         Our mission
       </Typography>
-      <Typography variant="subtitle2">
-        We are on a mission to help transform the digital landscape with
-        blockchain-enabled platforms, one client at a time. We know how to
-        channel beautiful design and robust development into innovative
-        technology solutions. Our goal is to support our clients in harnessing
-        the transformational power of blockchain from ideas through to delivery.
+      <Typography variant="subtitle2" className="mb-10">
+        Born out a deep passion for beautiful design and efficient development
+        coalescing with the latest technologies, we are on a mission to
+        transform the digital landscape one client at a time. By supporting our
+        clients in discovering how they can embrace the latest technologies, we
+        feel they are
+      </Typography>
+      <Typography variant="subtitle3" className="lg:max-w-[75%]">
+        It is our belief that by harnessing the power of blockchain
+        technologies, that ideas can take on a whole new dimension. Existing
+        businesses can be turbocharged into new stages of growth. We have only
+        just started to uncover the incredible applications of Web3. We want to
+        help you discover your next great idea.
       </Typography>
     </div>
-    <div className="flex flex-col gap-6 sm:gap-12 lg:min-w-[500px]">
+    <div className="flex flex-col gap-6 text-center sm:gap-12 sm:text-left lg:min-w-[500px]">
       <div>
         <Typography variant="h2" className="mb-3 sm:mb-6">
-          44 million
+          £100M+
         </Typography>
-        <Typography variant="subtitle2">Transactions every 24 hours</Typography>
+        <Typography variant="subtitle2">Sales generated</Typography>
       </div>
       <div>
         <Typography variant="h2" className="mb-3 sm:mb-6">
-          $119 trillion
+          150K+
         </Typography>
-        <Typography variant="subtitle2">Assets under holding</Typography>
+        <Typography variant="subtitle2">Community members</Typography>
       </div>
       <div>
         <Typography variant="h2" className="mb-3 sm:mb-6">
-          46,000
+          150+
         </Typography>
-        <Typography variant="subtitle2">New users annually</Typography>
+        <Typography variant="subtitle2">Smart contracts deployed</Typography>
       </div>
     </div>
   </Container>

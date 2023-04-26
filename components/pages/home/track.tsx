@@ -22,20 +22,21 @@ const TrackRecordSection = () => {
             Our track record
           </Typography>
           <Typography variant="h3" className="mb-6">
-            Trusted by thoudsands of creators worldwide
+            Trusted near and far, by big and small
           </Typography>
           <Typography variant="subtitle2" className="mb-14">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-            ratione.
+            We have worked with innovative startups and established enterprises
+            worldwide. We believe size doesn&apos;t matter, but results do.
           </Typography>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            <TrackRecordCard title="8,000+">
-              Creators on the platform
+            <TrackRecordCard title="£100M+">Sales generated</TrackRecordCard>
+            <TrackRecordCard title="150K">Community members</TrackRecordCard>
+            <TrackRecordCard title="10+">
+              On-chain coins launched
             </TrackRecordCard>
-            <TrackRecordCard title="3%">Flat platform fee</TrackRecordCard>
-            <TrackRecordCard title="99.9%">Uptime guarantee</TrackRecordCard>
-            <TrackRecordCard title="$70M">Paid out to creators</TrackRecordCard>
+            <TrackRecordCard title="150+">
+              Smart contracts deployed
+            </TrackRecordCard>
           </div>
         </div>
       </div>
