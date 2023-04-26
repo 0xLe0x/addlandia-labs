@@ -80,9 +80,9 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
       ref={headerRef}
     >
       <div className="relative mx-auto flex max-w-[1600px] items-center justify-center py-8 px-4 sm:px-6 lg:px-8">
-        <div className="absolute left-9 w-full">
+        <div className="absolute left-9">
           <Link href="/" className="flex items-end gap-2">
-            <div
+            {/* <div
               ref={lottieRef}
               className={classNames('-m-10 h-28 w-28 transition-opacity', {
                 'opacity-0': !hasUserScrolled && isLottieAnimationComplete,
@@ -91,7 +91,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
                 'duration-1000': hasUserScrolled,
                 hidden: !hasAnimatedLogo,
               })}
-            />
+            /> */}
             <Image
               className={classNames({
                 hidden: hasAnimatedLogo,
