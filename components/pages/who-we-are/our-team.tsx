@@ -1,5 +1,6 @@
-import Container from '../../common/Container'
-import ProfileCard from '../../common/ProfileCard'
+import ProfileCard from '@/components/common/Card/ProfileCard'
+import Container from '@/components/common/Container'
+import Typography from '@/components/common/Typography'
 
 const profiles = [
   {
@@ -36,14 +37,16 @@ const profiles = [
 
 const TeamSection = () => {
   return (
-    <Container>
-      <h2 className="mb-6 text-3xl font-bold sm:text-5xl">Our team</h2>
-      <p className="max-w-[850px] text-lg leading-8 sm:text-2xl sm:leading-[44px]">
+    <Container className="mb-40 lg:mb-80">
+      <Typography variant="h3" className="mb-6">
+        Our team
+      </Typography>
+      <Typography variant="subtitle1" className="max-w-[850px]">
         We&apos;re a team of designers, developers and technology experts who
         are passionate about technology and building dreams. We want to help our
         clients grow and be forces for good in the world.
-      </p>
-      <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+      </Typography>
+      <div className="mt-24 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
         {profiles.map((profile) => (
           <ProfileCard {...profile} key={profile.name} />
         ))}

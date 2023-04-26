@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
-import Container from '../../common/Container'
-import TrackRecordCard from '../../common/TrackRecordCard'
+import TrackRecordCard from '@/components/common/Card/TrackRecordCard'
+import Container from '@/components/common/Container'
+import Typography from '@/components/common/Typography'
 
 const TrackRecordSection = () => {
   return (
@@ -15,20 +16,20 @@ const TrackRecordSection = () => {
           sizes="auto"
         />
       </div>
-      <div className="flex basis-1/2 items-center justify-center sm:px-10 lg:px-20 xl:px-32">
-        <div className="flex flex-col gap-4 max-w-3xl text-center md:text-left">
-          <div className="text-lg font-semibold text-primary">
+      <div className="flex basis-1/2 items-center justify-center px-4 sm:px-10 lg:pl-20 xl:pl-32">
+        <div className="flex max-w-3xl flex-col gap-4 text-center md:text-left">
+          <Typography variant="h6" className="font-semibold text-primary">
             Our track record
-          </div>
-          <h2 className="mb-6 text-3xl sm:text-5xl font-bold">
+          </Typography>
+          <Typography variant="h3" className="mb-6">
             Trusted by thoudsands of creators worldwide
-          </h2>
-          <p className="mb-14 text-xl leading-9">
+          </Typography>
+          <Typography variant="subtitle2" className="mb-14">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
             impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
             ratione.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          </Typography>
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             <TrackRecordCard title="8,000+">
               Creators on the platform
             </TrackRecordCard>

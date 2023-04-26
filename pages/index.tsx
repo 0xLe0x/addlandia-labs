@@ -4,7 +4,7 @@ import Head from 'next/head'
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
 import BrandSection from '@/components/common/Brand'
-import { DeploySection,HeroSection, TrackRecordSection } from '@/components/pages/home'
+import { HeroSection, ServiceSection,TrackRecordSection } from '@/components/pages/home'
 import { client } from '@/sanity/lib/client'
 
 export default function IndexPage({ posts }: { posts: PostProps[] }) {
@@ -14,7 +14,7 @@ export default function IndexPage({ posts }: { posts: PostProps[] }) {
         <title>Addlandia Labs</title>
       </Head>
       <HeroSection />
-      <DeploySection />
+      <ServiceSection />
       <TrackRecordSection />
       <BrandSection />
       <BlogSection posts={posts} />

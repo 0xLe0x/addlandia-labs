@@ -2,8 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useNextSanityImage } from 'next-sanity-image'
 
-import { client } from '../../../sanity/lib/client'
+import { client } from '@/sanity/lib/client'
+
 import Container from '../Container'
+import Typography from '../Typography'
 import { PostProps } from './def'
 
 const BlogSection = ({ posts }: { posts: PostProps[] }) => {
@@ -16,12 +18,15 @@ const BlogSection = ({ posts }: { posts: PostProps[] }) => {
 
   return (
     <Container>
-      <h2 className="mb-6 text-center text-3xl font-bold sm:text-5xl">
+      <Typography
+        variant="h3"
+        className="mb-6 text-center text-3xl font-bold sm:text-5xl"
+      >
         From the blog
-      </h2>
-      <p className="text-center text-xl leading-9">
+      </Typography>
+      <Typography variant="subtitle2" className="text-center text-xl leading-9">
         Learn how to grow your business with our expert advice.
-      </p>
+      </Typography>
       <div className="mt-10 grid gap-5 lg:mt-24 lg:grid-cols-3">
         {posts.length > 0 &&
           posts.map(

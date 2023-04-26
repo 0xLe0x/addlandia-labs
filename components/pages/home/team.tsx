@@ -1,5 +1,5 @@
-import Container from '../../common/Container'
-import ProfileCard from '../../common/ProfileCard'
+import ProfileCard from '@/components/common/Card/ProfileCard'
+import Container from '@/components/common/Container'
 
 const profiles = [
   {

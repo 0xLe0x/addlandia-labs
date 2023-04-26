@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import Typography from '@/components/common/Typography'
+
 import { ProfileCardProps } from './def'
 
 const ProfileCard: FC<ProfileCardProps> = ({ avatar, name, title }) => {
@@ -14,10 +16,10 @@ const ProfileCard: FC<ProfileCardProps> = ({ avatar, name, title }) => {
         height={320}
       />
       <div className="flex flex-col justify-center">
-        <h3 className="text-center text-xl font-semibold sm:text-left">
+        <Typography variant="h6" className="text-center sm:text-left">
           {name}
-        </h3>
-        <p className="text-lg">{title}</p>
+        </Typography>
+        <Typography variant="subtitle3">{title}</Typography>
       </div>
     </div>
   )

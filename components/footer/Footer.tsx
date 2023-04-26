@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import Container from '@/components/common/Container'
+import ContactUsPage from './contact-us'
 
 const Footer = () => (
   <footer className="pt-10 md:pt-20">
@@ -80,7 +81,8 @@ const Footer = () => (
         </div>
       </div>
     </Container> */}
-    <div className="bg-gray-50">
+    <ContactUsPage />
+    <div className="bg-gray-50" id="contact">
       <Container>
         <h2 id="footer-heading" className="sr-only">
           Footer

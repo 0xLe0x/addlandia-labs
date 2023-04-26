@@ -2,7 +2,6 @@ import groq from 'groq'
 
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
-import BrandSection from '@/components/common/Brand'
 import { MissionSection, TeamSection } from '@/components/pages/who-we-are'
 import { client } from '@/sanity/lib/client'
 
@@ -11,7 +10,6 @@ const WhoWeArePage = ({ posts }: { posts: PostProps[] }) => {
     <>
       <MissionSection />
       <TeamSection />
-      <BrandSection />
       <BlogSection posts={posts} />
     </>
   )
