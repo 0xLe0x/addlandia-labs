@@ -96,15 +96,15 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
               className={classNames({
                 hidden: hasAnimatedLogo,
               })}
-              src="/logo.png"
+              src="/logo-top.svg"
               alt="Addlandia Labs"
-              width={49}
+              width={180}
               height={35}
             />
-            <span className="-mb-[3px] text-xl font-semibold leading-none">
+            {/* <span className="-mb-[3px] text-xl font-semibold leading-none">
               <span className="text-primary">Addlandia </span>
               Labs
-            </span>
+            </span> */}
           </Link>
         </div>
         <div className="hidden gap-12 text-lg font-semibold sm:flex">
