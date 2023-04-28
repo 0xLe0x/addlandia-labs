@@ -16,7 +16,7 @@ const OurServicesSection = () => {
             Our services
           </Typography>
           <Typography variant="body2" className="py-2">
-            We offer a end-to-end service from discovery through to design and
+            We offer an end-to-end service from discovery through to design and
             development, as well as supporting our clients beyond launch.
           </Typography>
           <Typography variant="body2" className="py-2">
