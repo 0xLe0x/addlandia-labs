@@ -37,16 +37,18 @@ const profiles = [
 
 const TeamSection = () => {
   return (
-    <Container className="mb-40 lg:mb-80">
-      <Typography variant="h3" className="mb-6">
-        Our team
-      </Typography>
-      <Typography variant="subtitle1" className="max-w-[850px]">
-        We&apos;re a team of designers, developers and technology experts who
-        are passionate about technology and building dreams. We want to help our
-        clients grow and be forces for good in the world.
-      </Typography>
-      <div className="mt-24 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+    <Container className="mb-40 flex flex-col md:flex-row gap-20 lg:mb-80">
+      <div className="basis-1/3">
+        <Typography variant="h3" className="mb-6">
+          Our team
+        </Typography>
+        <Typography variant="subtitle1" className="max-w-[850px]">
+          We&apos;re a team of designers, developers and technology experts who
+          are passionate about technology and building dreams. We want to help
+          our clients grow and be forces for good in the world.
+        </Typography>
+      </div>
+      <div className="grid basis-2/3 grid-cols-1 gap-x-8 gap-y-16 sm:mt-0 sm:grid-cols-2 lg:grid-cols-2">
         {profiles.map((profile) => (
           <ProfileCard {...profile} key={profile.name} />
         ))}

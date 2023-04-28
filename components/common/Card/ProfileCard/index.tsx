@@ -7,19 +7,21 @@ import { ProfileCardProps } from './def'
 
 const ProfileCard: FC<ProfileCardProps> = ({ avatar, name, title }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 sm:items-start">
+    <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
       <Image
         src={avatar}
-        className="h-[320px] w-[480px] rounded-[16px] object-cover"
+        className="h-[75px] w-[75px] rounded-full object-cover"
         alt={name}
-        width={480}
-        height={320}
+        width={75}
+        height={75}
       />
       <div className="flex flex-col justify-center">
         <Typography variant="h6" className="text-center sm:text-left">
           {name}
         </Typography>
-        <Typography variant="subtitle3">{title}</Typography>
+        <Typography variant="subtitle3" className="text-primary">
+          {title}
+        </Typography>
       </div>
     </div>
   )
