@@ -1,7 +1,7 @@
 import {
-  CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  WrenchScrewdriverIcon,
 } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 
@@ -30,7 +30,7 @@ const JustGotBetterSection = () => {
         </div>
         <div className="mt-10 flex flex-col gap-10 text-lg">
           <FeatureCard
-            icon={<CloudArrowUpIcon className="h-6 w-6 text-primary" />}
+            icon={<ServerIcon className="h-6 w-6 text-primary" />}
             title="Modified ERC-721"
           >
             Kryptoria needed to devise a method by which IPFS stored metadata
@@ -45,8 +45,8 @@ const JustGotBetterSection = () => {
             Ellerium was born!
           </FeatureCard>
           <FeatureCard
-            icon={<ServerIcon className="h-6 w-6 text-primary" />}
-            title="Built in Unity (logo)"
+            icon={<WrenchScrewdriverIcon className="h-6 w-6 text-primary" />}
+            title="Built in Unity"
           >
             Massive Multiplayer Online Game (MMOG) built using the Unity game
             engine and integrated with the Ethereum blockchain
