@@ -7,8 +7,8 @@ import Typography from '@/components/common/Typography'
 const OurServicesSection = () => {
   return (
     <div>
-      <Container className="flex flex-col gap-10 py-20 md:pb-32 md:pt-40 lg:flex-row">
-        <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
+      <Container className="flex flex-col gap-x-10 gap-y-20 py-20 md:pb-32 md:pt-40 lg:flex-row">
+        <div className="mx-auto flex max-w-[950px] flex-col gap-4">
           <Typography variant="h6" className="text-primary">
             Everything you need
           </Typography>
@@ -25,7 +25,7 @@ const OurServicesSection = () => {
             multiples later on.
           </Typography>
         </div>
-        <div className="grid grid-cols-1 gap-x-12 gap-y-10 pt-10 text-lg sm:grid-cols-2 lg:gap-x-20 lg:gap-y-16 lg:pt-28">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-10 text-lg sm:grid-cols-2 lg:gap-x-20 lg:gap-y-16">
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Discover - Technical Research "
