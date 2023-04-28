@@ -33,8 +33,9 @@ const ServiceSection = () => {
             There should be no limits on your own website, so we don&apos;t do
             watered down web design. Our team of award-winning designers brings
             decades of experience to the table, enabling us to take on any
-            project &minus; from enhancing existing UX/UI design to creating new
-            concepts from scratch.
+            project. From enhancing existing UX/UI design to creating new
+            concepts from scratch, our designers will bring your concept to
+            life.
           </ServiceCard>
           <ServiceCard
             icon={<CodeBracketSquareIcon className="h-6 w-6 text-primary" />}
