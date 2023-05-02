@@ -19,7 +19,7 @@ module.exports = {
       colors: {
         primary: "#8A5BF5",
         secondary: "#FFFFFF",
-        text: "#111827",
+        text: "#FFFFFF",
       },
       fontFamily: {
         sans: ["Graphik", "system-ui", "-apple-system", "sans-serif"],

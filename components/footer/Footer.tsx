@@ -83,7 +83,7 @@ const Footer = () => (
       </div>
     </Container> */}
     <ContactUsSection />
-    <div className="bg-gray-50" id="contact">
+    <div className="" id="contact">
       <Container>
         <h2 id="footer-heading" className="sr-only">
           Footer

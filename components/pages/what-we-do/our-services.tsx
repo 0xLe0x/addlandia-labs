@@ -30,56 +30,49 @@ const OurServicesSection = () => {
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Discover - Technical Research "
           >
-            Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse
-            semper morbi. Odio urna massa nunc massa.
+            In-depth research to uncover the best solutions available for you.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Discover - Competitive Analysis"
           >
-            Corporis asperiores ea nulla temporibus asperiores non tempore
-            assumenda aut.
+            Complete analysis of competitor solutions and how you can improve.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Design - User Experience (UX)  "
           >
-            In sit qui aliquid deleniti et. Ad nobis sunt omnis. Quo sapiente
-            dicta laboriosam.
+            Full preliminary design work taking concepts through to wireframes.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Design - User Interface (UI)"
           >
-            Sed rerum sunt dignissimos ullam. Iusto iure occaecati voluptate
-            eligendi fugiat sequi.
+            Bringing your vision to life with full designs and component libraries.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Develop - Web Development"
           >
-            Quos inventore harum enim nesciunt. Aut repellat rerum omnis
-            adipisci.
+            Building your dream one line of code at a time. We work across all tech stacks of note.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Develop - Mobile Development"
           >
-            Quae sit sunt excepturi fugit veniam voluptatem ipsum commodi.
+            From native apps to mobile optimised platforms, we will keep you moving.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Strategy - Product Roadmap"
           >
-            Eos laudantium repellat sed architecto earum unde incidunt. Illum
-            sit dolores voluptatem.
+            We can work with you to unpack future product iterations to ensure you are always ahead.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Support - Maintenance & Security"
           >
-            Nulla est saepe accusamus nostrum est est. Fugit voluptatum omnis
-            quidem voluptatem.
+            Our work doesn't end when you launch. We help you stay on top of security and maintenance issues
           </ServiceCard>
         </div>
       </Container>

@@ -4,12 +4,12 @@ import Typography from '@/components/common/Typography'
 
 const profiles = [
   {
-    avatar: '/images/photo_1.jpg',
+    avatar: '/images/Thomas.jpg',
     name: 'Thomas',
     title: 'Co-Founder',
   },
   {
-    avatar: '/images/photo_2.jpg',
+    avatar: '/images/Will.jpeg',
     name: 'Will',
     title: 'Co-Founder',
   },
@@ -19,25 +19,25 @@ const profiles = [
     title: 'Head of Design',
   },
   {
-    avatar: '/images/photo_4.jpg',
-    name: 'Josh',
-    title: 'Head of Development',
+    avatar: '/images/Brian.jpg',
+    name: 'Brian',
+    title: 'Lead Architect',
   },
   {
-    avatar: '/images/photo_5.jpg',
+    avatar: '/images/Alex.jpg',
     name: 'Alex',
     title: 'Lead Project Manager',
   },
   {
-    avatar: '/images/photo_6.jpg',
-    name: 'Brian',
-    title: 'Lead Architect',
+    avatar: '/images/photo_4.jpg',
+    name: 'Josh',
+    title: 'Head of Development',
   },
 ]
 
 const TeamSection = () => {
   return (
-    <Container className="mb-40 flex flex-col md:flex-row gap-20 lg:mb-80">
+    <Container className="mb-40 flex flex-col gap-20 md:flex-row lg:mb-80">
       <div className="basis-1/3">
         <Typography variant="h3" className="mb-6">
           Our team
