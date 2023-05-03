@@ -7,7 +7,7 @@ import { ProfileCardProps } from './def'
 
 const ProfileCard: FC<ProfileCardProps> = ({ avatar, name, title }) => {
   return (
-    <div className="flex flex-col items-center gap-8 sm:flex-row">
+    <div className="flex flex-col items-center gap-8 sm:flex-row" data-aos="fade-down">
       <Image
         src={avatar}
         className="h-[75px] w-[75px] rounded-full object-cover"
