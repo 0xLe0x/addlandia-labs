@@ -33,7 +33,7 @@ const JustGotBetterSection = () => {
         </div>
         <div className="mt-10 flex flex-col gap-10 text-lg">
           <FeatureCard
-            icon={<ServerIcon className="h-6 w-6 text-primary" />}
+            icon={<WrenchScrewdriverIcon className="h-6 w-6 text-primary" />}
             title="Modified ERC-721"
           >
             Kryptoria needed to devise a method by which IPFS stored metadata
@@ -48,7 +48,14 @@ const JustGotBetterSection = () => {
             Ellerium was born!
           </FeatureCard>
           <FeatureCard
-            icon={<WrenchScrewdriverIcon className="h-6 w-6 text-primary" />}
+            icon={
+              <Image
+                src="/images/unity.png"
+                width={24}
+                height={28}
+                alt="unity"
+              />
+            }
             title="Built in Unity"
           >
             Massive Multiplayer Online Game (MMOG) built using the Unity game

@@ -29,10 +29,6 @@ const ContactUsPage = () => {
               </Typography>
             </div>
             <div className="flex items-center gap-4">
-              <PhoneIcon className="h-7 w-7 text-gray-500" />
-              <Typography variant="body2">+1 (555) 234-5678</Typography>
-            </div>
-            <div className="flex items-center gap-4">
               <EnvelopeIcon className="h-7 w-7 text-gray-500" />
               <Typography variant="body2">contact@addlandia.com</Typography>
             </div>

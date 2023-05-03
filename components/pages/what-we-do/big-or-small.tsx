@@ -1,8 +1,8 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  ComputerDesktopIcon,
+  LightBulbIcon,
+  RocketLaunchIcon,
+  TrophyIcon,
 } from '@heroicons/react/24/outline'
 
 import ServiceCard from '@/components/common/Card/ServiceCard'
@@ -14,7 +14,7 @@ const BigOrSmallSection = () => {
     <div>
       <Container className="py-20 md:pb-32 md:pt-40">
         <div
-          className="mx-auto flex max-w-[950px] flex-col justify-center gap-4"
+          className="mx-auto flex max-w-[920px] flex-col justify-center gap-4"
           data-aos="fade"
         >
           <Typography variant="h6" className="text-center text-primary">
@@ -34,7 +34,7 @@ const BigOrSmallSection = () => {
         >
           <ServiceCard
             icon={
-              <CloudArrowUpIcon className="h-6 w-6 text-white sm:h-[30px] sm:w-[30px]" />
+              <RocketLaunchIcon className="h-6 w-6 text-white sm:h-[30px] sm:w-[30px]" />
             }
             title="Web3 Platforms"
             large
@@ -43,7 +43,7 @@ const BigOrSmallSection = () => {
             in understanding how blockchain can enhance your business.
           </ServiceCard>
           <ServiceCard
-            icon={<LockClosedIcon className="h-[30px] w-[30px] text-white" />}
+            icon={<ComputerDesktopIcon className="h-[30px] w-[30px] text-white" />}
             title="Web2 Platforms"
             large
           >
@@ -52,7 +52,7 @@ const BigOrSmallSection = () => {
             that&apos;s ok!
           </ServiceCard>
           <ServiceCard
-            icon={<ArrowPathIcon className="h-[30px] w-[30px] text-white" />}
+            icon={<LightBulbIcon className="h-[30px] w-[30px] text-white" />}
             title="NFT Projects"
             large
           >
@@ -60,7 +60,7 @@ const BigOrSmallSection = () => {
             connect your idea with NFT collectors.
           </ServiceCard>
           <ServiceCard
-            icon={<FingerPrintIcon className="h-[30px] w-[30px] text-white" />}
+            icon={<TrophyIcon className="h-[30px] w-[30px] text-white" />}
             title="Blockchain Games"
             large
           >
