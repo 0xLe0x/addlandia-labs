@@ -12,7 +12,10 @@ import Typography from '@/components/common/Typography'
 const JustGotBetterSection = () => {
   return (
     <Container className="flex flex-col justify-between gap-10 px-0 lg:flex-row">
-      <div className="basis-1/2 items-center justify-center px-6 lg:max-w-2xl lg:px-0">
+      <div
+        className="basis-1/2 items-center justify-center px-6 lg:max-w-2xl lg:px-0"
+        data-aos="fade-down"
+      >
         <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
           <Typography variant="h6" className="text-primary">
             Case study

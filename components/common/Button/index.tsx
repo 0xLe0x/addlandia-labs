@@ -1,5 +1,6 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
 import classnames from 'classnames'
+import Link from 'next/link'
 import { FC } from 'react'
 
 import { ArrowLinkProps } from './def'
@@ -26,11 +27,19 @@ const Button: FC<ArrowLinkProps> = ({
   const ArrowButton = showArrow && <ArrowSmallRightIcon className="h-6 w-6" />
 
   if (href) {
+    if (href.startsWith('#')) {
+      return (
+        <a href={href} className={className}>
+          {children}
+          {ArrowButton}
+        </a>
+      )
+    }
     return (
-      <a href={href} className={className}>
+      <Link href={href} className={className}>
         {children}
         {ArrowButton}
-      </a>
+      </Link>
     )
   }
   return (

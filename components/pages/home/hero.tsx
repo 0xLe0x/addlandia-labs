@@ -1,12 +1,6 @@
-import { Transition } from '@headlessui/react'
-import { ArrowDownIcon } from '@heroicons/react/20/solid'
-import classNames from 'classnames'
-import { useEffect, useRef, useState } from 'react'
+import 'aos/dist/aos.css'
 
 import Button from '@/components/common/Button'
-
-import { useMounting, useWindowUtils } from '../../../app/app.hooks'
-import fluid from '../../../lib/fluid'
 import Typography from '@/components/common/Typography'
 
 const HeroSection = () => {
@@ -46,7 +40,7 @@ const HeroSection = () => {
   // }, [])
 
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full" data-aos="fade">
       {/* <Transition
         as="div"
         className="fixed z-20 flex h-full w-full items-center justify-center bg-primary text-4xl font-bold leading-none md:text-6xl lg:text-9xl"
@@ -110,7 +104,7 @@ const HeroSection = () => {
           bring new ideas to life.
         </Typography>
         <div className="flex gap-2">
-          <Button href="#contact" fill primary>
+          <Button href="/contact-us" fill primary>
             Contact us
           </Button>
           <Button href="#service" showArrow>

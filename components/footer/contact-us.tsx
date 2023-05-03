@@ -4,7 +4,7 @@ import Typography from '@/components/common/Typography'
 
 const ContactUsSection = () => {
   return (
-    <div className="bg-[#0b0914]">
+    <div className="bg-[#0b0914]" data-aos="fade-right">
       <Container className="py-10 sm:py-40">
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
           <div>

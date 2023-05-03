@@ -13,7 +13,10 @@ const BigOrSmallSection = () => {
   return (
     <div>
       <Container className="py-20 md:pb-32 md:pt-40">
-        <div className="mx-auto flex max-w-[950px] flex-col justify-center gap-4">
+        <div
+          className="mx-auto flex max-w-[950px] flex-col justify-center gap-4"
+          data-aos="fade"
+        >
           <Typography variant="h6" className="text-center text-primary">
             We do it all
           </Typography>
@@ -26,7 +29,10 @@ const BigOrSmallSection = () => {
             you.
           </Typography>
         </div>
-        <div className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2">
+        <div
+          className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2"
+          data-aos="fade-down"
+        >
           <ServiceCard
             icon={
               <CloudArrowUpIcon className="h-6 w-6 text-white sm:h-[30px] sm:w-[30px]" />

@@ -16,7 +16,10 @@ const TrackRecordSection = () => {
           sizes="auto"
         />
       </div>
-      <div className="flex basis-1/2 items-center justify-center px-4 sm:px-10 lg:pl-20 xl:pl-32">
+      <div
+        className="flex basis-1/2 items-center justify-center px-4 sm:px-10 lg:pl-20 xl:pl-32"
+        data-aos="fade-down"
+      >
         <div className="flex max-w-3xl flex-col gap-4 text-center md:text-left">
           <Typography variant="h6" className="font-semibold text-primary">
             Our track record

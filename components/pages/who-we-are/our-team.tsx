@@ -38,7 +38,7 @@ const profiles = [
 const TeamSection = () => {
   return (
     <Container className="mb-40 flex flex-col gap-20 md:flex-row lg:mb-80">
-      <div className="basis-1/3">
+      <div className="basis-1/3" data-aos="fade-down">
         <Typography variant="h3" className="mb-6">
           Our team
         </Typography>
@@ -48,7 +48,10 @@ const TeamSection = () => {
           our clients grow and be forces for good in the world.
         </Typography>
       </div>
-      <div className="grid basis-2/3 grid-cols-1 gap-x-8 gap-y-16 sm:mt-0 sm:grid-cols-2 lg:grid-cols-2">
+      <div
+        className="grid basis-2/3 grid-cols-1 gap-x-8 gap-y-16 sm:mt-0 sm:grid-cols-2 lg:grid-cols-2"
+        data-aos="fade-up"
+      >
         {profiles.map((profile) => (
           <ProfileCard {...profile} key={profile.name} />
         ))}

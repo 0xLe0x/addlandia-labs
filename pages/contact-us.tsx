@@ -12,8 +12,8 @@ import Typography from '@/components/common/Typography'
 const ContactUsPage = () => {
   return (
     <>
-      <Container className="flex min-h-screen flex-col items-center gap-16 pt-32 lg:pt-60 lg:flex-row lg:items-start">
-        <div className="lg:basis-1/2 lg:px-8">
+      <Container className="flex min-h-screen flex-col items-center gap-16 pt-32 lg:flex-row lg:items-start lg:pt-60">
+        <div className="lg:basis-1/2 lg:px-8" data-aos="fade-down">
           <Typography variant="h3" className="mb-8">
             Let&apos;s talk
           </Typography>
@@ -38,9 +38,9 @@ const ContactUsPage = () => {
             </div>
           </div>
         </div>
-        <div className="lg:basis-1/2 w-full sm:w-auto">
+        <div className="w-full sm:w-auto lg:basis-1/2" data-aos="fade-down">
           <div className="flex max-w-xl flex-col gap-6">
-            <div className="flex gap-8 flex-col sm:flex-row">
+            <div className="flex flex-col gap-8 sm:flex-row">
               <FormInput
                 id="first_name"
                 label="First name"

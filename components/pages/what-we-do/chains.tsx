@@ -16,7 +16,10 @@ const ChainSection = () => (
     <Typography variant="h4" className="mb-16 text-center">
       Chains we build on and across
     </Typography>
-    <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+    <div
+      className="flex flex-wrap justify-center gap-x-10 gap-y-10"
+      data-aos="fade"
+    >
       {chains.map((chain, i) => (
         <Image
           src={chain}
