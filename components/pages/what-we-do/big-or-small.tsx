@@ -31,7 +31,6 @@ const BigOrSmallSection = () => {
         </div>
         <div
           className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2"
-          data-aos="fade-down"
         >
           <ServiceCard
             icon={

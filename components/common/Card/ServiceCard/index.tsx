@@ -15,7 +15,7 @@ const ServiceCard: FC<ServiceCardProps> = ({
 }) => {
   if (href) {
     return (
-      <div className="flex basis-1/3 flex-col gap-5">
+      <div className="flex basis-1/3 flex-col gap-5" data-aos="fade-down">
         <div className="flex items-center gap-4">
           {icon}
           <Typography variant="h6" className="font-semibold">
@@ -37,7 +37,7 @@ const ServiceCard: FC<ServiceCardProps> = ({
   const iconClassName = large ? 'bg-primary p-[8px] sm:p-[15px]' : ''
 
   return (
-    <div className="flex gap-5 sm:gap-9">
+    <div className="flex gap-5 sm:gap-9" data-aos="fade-down">
       <div>
         <div className={classnames('rounded-lg', iconClassName)}>{icon}</div>
       </div>
