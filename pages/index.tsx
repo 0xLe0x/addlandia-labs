@@ -1,7 +1,5 @@
-import AOS from 'aos'
 import groq from 'groq'
 import Head from 'next/head'
-import { useEffect } from 'react'
 
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
@@ -10,13 +8,7 @@ import ContactUsSection from '@/components/footer/contact-us'
 import { HeroSection, ServiceSection,TrackRecordSection } from '@/components/pages/home'
 import { client } from '@/sanity/lib/client'
 
-export default function IndexPage({ posts }: { posts: PostProps[] }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    })
-  }, [])
-  
+export default function IndexPage({ posts }: { posts: PostProps[] }) {  
   return (
     <>
       <Head>

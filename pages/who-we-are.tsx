@@ -1,6 +1,4 @@
-import AOS from 'aos'
 import groq from 'groq'
-import { useEffect } from 'react'
 
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
@@ -9,11 +7,6 @@ import { MissionSection, TeamSection } from '@/components/pages/who-we-are'
 import { client } from '@/sanity/lib/client'
 
 const WhoWeArePage = ({ posts }: { posts: PostProps[] }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    })
-  }, [])
   return (
     <>
       <MissionSection />

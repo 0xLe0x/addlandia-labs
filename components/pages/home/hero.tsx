@@ -1,5 +1,3 @@
-import 'aos/dist/aos.css'
-
 import Button from '@/components/common/Button'
 import Typography from '@/components/common/Typography'
 

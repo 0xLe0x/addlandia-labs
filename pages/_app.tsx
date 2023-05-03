@@ -1,4 +1,5 @@
 import 'styles/global.css'
+import 'aos/dist/aos.css'
 
 import { IBM_Plex_Mono, Inter, PT_Serif } from '@next/font/google'
 import AOS from 'aos'
@@ -27,6 +28,12 @@ const serif = PT_Serif({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  }, [])
+  
   return (
     <>
       <style jsx global>
