@@ -72,7 +72,7 @@ const OurServicesSection = () => {
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Support - Maintenance & Security"
           >
-            Our work doesn't end when you launch. We help you stay on top of security and maintenance issues
+            Our work doesn&apos;t end when you launch. We help you stay on top of security and maintenance issues
           </ServiceCard>
         </div>
       </Container>

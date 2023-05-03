@@ -10,7 +10,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ icon, title, children }) => {
       </div>
       <div>
         <p className="text-lg leading-8 lg:text-xl lg:leading-8">
-          <span className="font-semibold text-black">{title}</span>
+          <span className="font-semibold text-secondary">{title}</span>
           &nbsp;
           <span>{children}</span>
         </p>

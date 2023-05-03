@@ -17,7 +17,7 @@ const BlogSection = ({ posts }: { posts: PostProps[] }) => {
   }
 
   return (
-    <Container>
+    <Container className="mb-10 md:mb-20">
       <Typography
         variant="h3"
         className="mb-6 text-center text-3xl font-bold sm:text-5xl"

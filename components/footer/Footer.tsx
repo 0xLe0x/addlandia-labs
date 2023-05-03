@@ -2,10 +2,8 @@ import Image from 'next/image'
 
 import Container from '@/components/common/Container'
 
-import ContactUsSection from './contact-us'
-
 const Footer = () => (
-  <footer className="pt-10 md:pt-20">
+  <footer className="">
     {/* <Container className="flex justify-center">
       <div className="flex max-w-[1100px] flex-col items-center gap-10 py-32 md:py-60 lg:flex-row">
         <Image
@@ -82,7 +80,6 @@ const Footer = () => (
         </div>
       </div>
     </Container> */}
-    <ContactUsSection />
     <div className="" id="contact">
       <Container>
         <h2 id="footer-heading" className="sr-only">

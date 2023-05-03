@@ -4,6 +4,7 @@ import Head from 'next/head'
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
 import BrandSection from '@/components/common/Brand'
+import ContactUsSection from '@/components/footer/contact-us'
 import { HeroSection, ServiceSection,TrackRecordSection } from '@/components/pages/home'
 import { client } from '@/sanity/lib/client'
 
@@ -18,6 +19,7 @@ export default function IndexPage({ posts }: { posts: PostProps[] }) {
       <TrackRecordSection />
       <BrandSection />
       <BlogSection posts={posts} />
+      <ContactUsSection />
     </>
   )
 }

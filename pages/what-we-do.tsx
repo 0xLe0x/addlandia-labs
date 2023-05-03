@@ -2,6 +2,7 @@ import groq from 'groq'
 
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
+import ContactUsSection from '@/components/footer/contact-us'
 import {
   BigOrSmallSection,
   ChainSection,
@@ -18,6 +19,7 @@ const WhatWeDoPage = ({ posts }: { posts: PostProps[] }) => {
       <JustGotBetterSection />
       <ChainSection />
       <BlogSection posts={posts} />
+      <ContactUsSection />
     </>
   )
 }

@@ -16,14 +16,9 @@ const ContactUsSection = () => {
             </Typography>
           </div>
           <div>
-            <Button href="#contact" fill primary>
+            <Button href="/contact-us" fill primary>
               Contact us
             </Button>
-          </div>
-        </div>
-        <div>
-          <div>
-            
           </div>
         </div>
       </Container>
