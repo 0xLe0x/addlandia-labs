@@ -27,13 +27,6 @@ const serif = PT_Serif({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    AOS.refreshHard()
-    AOS.init({
-      duration: 1000,
-    })
-  }, [])
-
   return (
     <>
       <style jsx global>
