@@ -69,7 +69,7 @@ const BlogSection = ({ posts }: { posts: PostProps[] }) => {
                           <span>{name}</span>
                         </span>
                       </div>
-                      <div className="w-5/6 text-xl font-semibold">{title}</div>
+                      <div className="sm:w-5/6 text-xl font-semibold">{title}</div>
                     </div>
                   </Link>{' '}
                 </div>
