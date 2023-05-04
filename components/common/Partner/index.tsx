@@ -35,7 +35,7 @@ const PartnerSection = () => (
     </Typography>
     <div className="flex flex-col justify-around gap-y-10 sm:flex-row">
       {partners.map((partner, i) => (
-        <Link href={partner.link} key={`partner_${i + 1}`} target="_blank">
+        <Link href={partner.link} key={`partner_${i + 1}`} target="_blank" data-aos="fade">
           <Image
             src={partner.image}
             fill
