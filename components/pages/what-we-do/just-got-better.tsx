@@ -25,10 +25,10 @@ const JustGotBetterSection = () => {
           </Typography>
           <Typography variant="body2" className="py-2">
             Kryptoria launched in 2022 to push the boundaries of what blockchain
-            gaming could achieve. Despite a relatively nascent, market,
-            Kryptoria pioneered hyper-gas efficient modified ERC-721 contracts,
-            with dynamic metadata, all built inside the Unity game engine with
-            custom blockchain integrations.
+            gaming could achieve. Despite being a relatively nascent market,
+            Kryptoria pioneered hyper-gas efficient modified ERC-721 contracts
+            with dynamic metadata capabilities. All built inside the Unity game
+            engine with custom blockchain integrations.
           </Typography>
         </div>
         <div className="mt-10 flex flex-col gap-10 text-lg">
@@ -45,7 +45,6 @@ const JustGotBetterSection = () => {
             title="ERC-20"
           >
             Full on-chain tokenomics modelling and ERC-20 contract deployment.
-            Ellerium was born!
           </FeatureCard>
           <FeatureCard
             icon={

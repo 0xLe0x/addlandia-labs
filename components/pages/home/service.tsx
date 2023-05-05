@@ -28,7 +28,7 @@ const ServiceSection = () => {
           <ServiceCard
             icon={<PencilIcon className="h-6 w-6 text-primary" />}
             title="Product Design"
-            href="#"
+            href="/what-we-do"
           >
             There should be no limits on your own website, so we don&apos;t do
             watered down web design. Our team of award-winning designers brings
@@ -40,7 +40,7 @@ const ServiceSection = () => {
           <ServiceCard
             icon={<CodeBracketSquareIcon className="h-6 w-6 text-primary" />}
             title="Product Development"
-            href="#"
+            href="/what-we-do"
           >
             Trust our expert developers to bring your Web3 vision to life with
             seamless functionality and cutting-edge features. From bespoke
@@ -52,7 +52,7 @@ const ServiceSection = () => {
           <ServiceCard
             icon={<ChatBubbleLeftRightIcon className="h-6 w-6 text-primary" />}
             title="Product Strategy"
-            href="#"
+            href="/what-we-do"
           >
             Not sure where to start with web3? We can help. Whether you need
             advice on integrating blockchain tech into your business or

@@ -83,7 +83,7 @@ const HeroSection = () => {
         //   }%`,
         // }}
       >
-        <div className="flex justify-center">
+        <div className="hidden justify-center md:flex">
           <span className="text-md flex flex-col justify-center gap-1 rounded-full border px-4 py-2 text-center md:flex-row md:text-lg">
             <Typography variant="subtitle3">
               Blockchain value creation for businesses.

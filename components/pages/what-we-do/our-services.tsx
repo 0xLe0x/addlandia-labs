@@ -66,13 +66,13 @@ const OurServicesSection = () => {
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Strategy - Product Roadmap"
           >
-            We can work with you to unpack future product iterations to ensure you are always ahead.
+            We work with you to unpack future product iterations to ensure you are always ahead.
           </ServiceCard>
           <ServiceCard
             icon={<CheckIcon className="h-6 w-6 text-primary" />}
             title="Support - Maintenance & Security"
           >
-            Our work doesn&apos;t end when you launch. We help you stay on top of security and maintenance issues
+            Our work doesn&apos;t end when you launch. We help you stay on top of security and maintenance issues.
           </ServiceCard>
         </div>
       </Container>
