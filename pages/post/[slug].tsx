@@ -61,38 +61,40 @@ const Post = ({ post }) => {
   return (
     <>
       {post && (
-        <Container className="max-w-5xl py-24 lg:py-40">
-          <div className="mb-10">
-            <div className="mb-8 flex gap-5">
-              {authorImage && (
-                <div>
-                  <Image
-                    src={urlFor(authorImage).width(50).url()}
-                    width={50}
-                    height={50}
-                    alt={name}
-                    className="rounded-full"
-                  />
+        <div className="flex justify-center">
+          <div className="w-full max-w-5xl px-6 py-24 lg:px-9 lg:py-40">
+            <div className="mb-10">
+              <div className="mb-8 flex gap-5">
+                {authorImage && (
+                  <div>
+                    <Image
+                      src={urlFor(authorImage).width(50).url()}
+                      width={50}
+                      height={50}
+                      alt={name}
+                      className="rounded-full"
+                    />
+                  </div>
+                )}
+                <div className="flex flex-col justify-center gap-1">
+                  <Typography variant="subtitle4">{name}</Typography>
+                  <Typography variant="subtitle4">
+                    {new Date(publishedAt).toDateString()}
+                  </Typography>
                 </div>
-              )}
-              <div className="flex flex-col justify-center gap-1">
-                <Typography variant="subtitle4">{name}</Typography>
-                <Typography variant="subtitle4">
-                  {new Date(publishedAt).toDateString()}
-                </Typography>
               </div>
+              <Typography variant="h4">{title}</Typography>
+              {categories && (
+                <ul>
+                  {categories.map((category) => (
+                    <li key={category}>{category}</li>
+                  ))}
+                </ul>
+              )}
             </div>
-            <Typography variant="h4">{title}</Typography>
-            {categories && (
-              <ul>
-                {categories.map((category) => (
-                  <li key={category}>{category}</li>
-                ))}
-              </ul>
-            )}
+            <PortableText value={body} components={ptComponents} />
           </div>
-          <PortableText value={body} components={ptComponents} />
-        </Container>
+        </div>
       )}
       <ContactUsSection />
     </>
