@@ -1,8 +1,6 @@
 import 'styles/global.css'
-import 'aos/dist/aos.css'
 
 import { IBM_Plex_Mono, Inter, PT_Serif } from '@next/font/google'
-import AOS from 'aos'
 import { AppProps } from 'next/app'
 import { createContext, useEffect, useState } from 'react'
 
@@ -31,12 +29,6 @@ export const NavContext = createContext([])
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isNavOpen, setIsNavOpen] = useState(false)
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    })
-  }, [])
 
   return (
     <>

@@ -4,6 +4,7 @@ import {
   RocketLaunchIcon,
   TrophyIcon,
 } from '@heroicons/react/24/outline'
+import Fade from 'react-reveal/Fade'
 
 import ServiceCard from '@/components/common/Card/ServiceCard'
 import Container from '@/components/common/Container'
@@ -13,22 +14,21 @@ const BigOrSmallSection = () => {
   return (
     <div>
       <Container className="pb-20 pt-40 md:pb-32">
-        <div
-          className="mx-auto flex max-w-[920px] flex-col justify-center gap-4"
-          data-aos="fade"
-        >
-          <Typography variant="h6" className="text-center text-primary">
-            We do it all
-          </Typography>
-          <Typography variant="h3" className="text-center">
-            Big or small
-          </Typography>
-          <Typography variant="subtitle1" className="py-2 text-center">
-            Our team has worked across technology sectors, stacks and chains for
-            decades. Our passion is focusing that expertise into results for
-            you.
-          </Typography>
-        </div>
+        <Fade>
+          <div className="mx-auto flex max-w-[920px] flex-col justify-center gap-4">
+            <Typography variant="h6" className="text-center text-primary">
+              We do it all
+            </Typography>
+            <Typography variant="h3" className="text-center">
+              Big or small
+            </Typography>
+            <Typography variant="subtitle1" className="py-2 text-center">
+              Our team has worked across technology sectors, stacks and chains
+              for decades. Our passion is focusing that expertise into results
+              for you.
+            </Typography>
+          </div>
+        </Fade>
         <div className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2">
           <ServiceCard
             icon={

@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
+import Fade from 'react-reveal/Fade'
 
 import Container from '../Container'
 import Typography from '../Typography'
@@ -35,14 +36,19 @@ const PartnerSection = () => (
     </Typography>
     <div className="flex flex-col justify-around gap-y-10 sm:flex-row">
       {partners.map((partner, i) => (
-        <Link href={partner.link} key={`partner_${i + 1}`} target="_blank" data-aos="fade">
-          <Image
-            src={partner.image}
-            fill
-            className={classnames(`scale-${partner.scale}`, "!static mx-auto !h-[70px] !w-auto ")}
-            alt={`partner_${i + 1}`}
-          />
-        </Link>
+        <Fade top key={`partner_${i + 1}`}>
+          <Link href={partner.link} target="_blank">
+            <Image
+              src={partner.image}
+              fill
+              className={classnames(
+                `scale-${partner.scale}`,
+                '!static mx-auto !h-[70px] !w-auto '
+              )}
+              alt={`partner_${i + 1}`}
+            />
+          </Link>
+        </Fade>
       ))}
     </div>
   </Container>

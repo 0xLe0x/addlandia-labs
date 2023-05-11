@@ -43,7 +43,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
         <section className="MOBILE-MENU flex md:hidden">
           <button
             className="HAMBURGER-ICON space-y-2"
-            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+            onClick={() => setIsNavOpen(true)} // toggle isNavOpen state on click
           >
             <span className="block h-0.5 w-8 rounded-full bg-secondary"></span>
             <span className="block h-0.5 w-8 rounded-full bg-secondary"></span>
@@ -59,7 +59,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
           >
             {' '}
             <button
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+              className="CROSS-ICON absolute top-0 right-0 px-4 py-7"
               onClick={() => setIsNavOpen(false)}
             >
               <svg
