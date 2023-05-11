@@ -45,9 +45,9 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span className="block h-0.5 w-8 animate-pulse rounded-full bg-secondary"></span>
-            <span className="block h-0.5 w-8 animate-pulse rounded-full bg-secondary"></span>
-            <span className="block h-0.5 w-8 animate-pulse rounded-full bg-secondary"></span>
+            <span className="block h-0.5 w-8 rounded-full bg-secondary"></span>
+            <span className="block h-0.5 w-8 rounded-full bg-secondary"></span>
+            <span className="block h-0.5 w-8 rounded-full bg-secondary"></span>
           </button>
 
           <div
@@ -75,7 +75,7 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            <ul className="MENU-LINK-MOBILE-OPEN flex min-h-[100px] flex-col items-center justify-between gap-10 pt-32 text-lg font-semibold">
+            <ul className="MENU-LINK-MOBILE-OPEN flex min-h-[150px] flex-col items-center justify-between gap-10 pt-32 text-lg font-semibold">
               <Link
                 className="relative leading-none text-text underline underline-offset-4"
                 href="/who-we-are"
@@ -88,13 +88,13 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
               >
                 What We Do
               </Link>
-            </ul>
               <Link
                 className="relative leading-none text-text underline underline-offset-4"
                 href="/contact-us"
               >
                 Contact Us
               </Link>
+            </ul>
           </div>
         </section>
       </div>
