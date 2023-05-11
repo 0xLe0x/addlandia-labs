@@ -8,7 +8,7 @@ import ContactUsSection from '@/components/footer/contact-us'
 import { HeroSection, ServiceSection,TrackRecordSection } from '@/components/pages/home'
 import { client } from '@/sanity/lib/client'
 
-export default function IndexPage({ posts }: { posts: PostProps[] }) {  
+export default function IndexPage({ posts }: { posts: PostProps[] }) {
   return (
     <>
       <Head>

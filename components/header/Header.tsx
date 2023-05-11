@@ -1,13 +1,14 @@
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
-import type { FC } from 'react'
-import { useState } from 'react'
+import { FC, useContext } from 'react'
+
+import { NavContext } from '@/pages/_app'
 
 import type { HeaderProps } from './Header.def'
 
 const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
-  const [isNavOpen, setIsNavOpen] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useContext(NavContext)
 
   return (
     <nav className="bg-neutral-900 fixed inset-x-0 top-0 z-10 bg-opacity-0 backdrop-blur transition-all">
@@ -88,6 +89,12 @@ const Header: FC<HeaderProps> = ({ hasAnimatedLogo }) => {
                 What We Do
               </Link>
             </ul>
+              <Link
+                className="relative leading-none text-text underline underline-offset-4"
+                href="/contact-us"
+              >
+                Contact Us
+              </Link>
           </div>
         </section>
       </div>

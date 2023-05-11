@@ -1,4 +1,5 @@
 import groq from 'groq'
+import { useContext, useEffect } from 'react'
 
 import BlogSection from '@/components/common/Blog'
 import { PostProps } from '@/components/common/Blog/def'
@@ -6,7 +7,14 @@ import ContactUsSection from '@/components/footer/contact-us'
 import { MissionSection, TeamSection } from '@/components/pages/who-we-are'
 import { client } from '@/sanity/lib/client'
 
+import { NavContext } from './_app'
+
 const WhoWeArePage = ({ posts }: { posts: PostProps[] }) => {
+  const [_isNavOpen, setIsNavOpen] = useContext(NavContext)
+  useEffect(() => {
+    setIsNavOpen(false)
+  }, [setIsNavOpen])
+  
   return (
     <>
       <MissionSection />

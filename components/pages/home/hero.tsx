@@ -10,7 +10,7 @@ const HeroSection = () => {
             <Typography variant="subtitle3">
               Blockchain value creation for businesses.
             </Typography>
-            <Button href="#" primary noPadding showArrow>
+            <Button href="/post/unlocking-value-with-blockchain" primary noPadding showArrow>
               Read more
             </Button>
           </span>

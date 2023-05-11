@@ -13,7 +13,7 @@ const FormInput: FC<FormInputProps> = (props) => {
           name={props.name}
           placeholder={props.placeholder}
           value={props.value}
-          onChange={props.onChange}
+          onChange={props.changeHandler}
           rows={5}
           className="appearance-none rounded-md py-2 px-4 text-black"
         />

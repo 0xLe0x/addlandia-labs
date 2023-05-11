@@ -14,7 +14,7 @@ const chains = [
 const ChainSection = () => (
   <Container className="py-28 lg:py-56">
     <Typography variant="h4" className="mb-16 text-center">
-      Chains we build on and across
+      Chains we build on
     </Typography>
     <div
       className="flex flex-wrap justify-center gap-x-10 gap-y-10"

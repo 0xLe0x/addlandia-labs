@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'
 import { IBM_Plex_Mono, Inter, PT_Serif } from '@next/font/google'
 import AOS from 'aos'
 import { AppProps } from 'next/app'
-import { useEffect } from 'react'
+import { createContext, useEffect, useState } from 'react'
 
 import Layout from '@/components/layout/Layout'
 
@@ -27,13 +27,17 @@ const serif = PT_Serif({
   weight: ['400', '700'],
 })
 
+export const NavContext = createContext([])
+
 export default function App({ Component, pageProps }: AppProps) {
+  const [isNavOpen, setIsNavOpen] = useState(false)
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     })
   }, [])
-  
+
   return (
     <>
       <style jsx global>
@@ -46,9 +50,11 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </style>
 
-      <Layout hasAnimatedLogo={pageProps.hasAnimatedLogo}>
-        <Component {...pageProps} />
-      </Layout>
+      <NavContext.Provider value={[isNavOpen, setIsNavOpen]}>
+        <Layout hasAnimatedLogo={pageProps.hasAnimatedLogo}>
+          <Component {...pageProps} />
+        </Layout>
+      </NavContext.Provider>
     </>
   )
 }

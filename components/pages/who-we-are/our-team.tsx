@@ -37,7 +37,7 @@ const profiles = [
 
 const TeamSection = () => {
   return (
-    <Container className="mb-40 flex flex-col gap-40 md:flex-row lg:mb-80">
+    <Container className="mb-40 flex flex-col gap-24 lg:gap-40 xl:flex-row lg:mb-80">
       <div className="flex-grow" data-aos="fade-down">
         <Typography variant="h3" className="mb-6">
           Our team
@@ -49,7 +49,7 @@ const TeamSection = () => {
         </Typography>
       </div>
       <div
-        className="grid basis-2/3 grid-cols-1 gap-x-8 gap-y-16 sm:mt-0 sm:grid-cols-2 lg:grid-cols-2 max-w-2xl"
+        className="grid basis-2/3 grid-cols-1 gap-x-8 gap-y-16 sm:mt-0 sm:grid-cols-2 lg:grid-cols-2 max-w-2xl mx-auto"
         data-aos="fade-up"
       >
         {profiles.map((profile) => (

@@ -5,6 +5,7 @@ const config = {
   },
   images: {
     domains: ['cdn.sanity.io'],
+    unoptimized: true,
   },
 }
 

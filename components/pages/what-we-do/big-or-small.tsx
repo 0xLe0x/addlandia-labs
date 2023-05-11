@@ -12,7 +12,7 @@ import Typography from '@/components/common/Typography'
 const BigOrSmallSection = () => {
   return (
     <div>
-      <Container className="py-20 md:pb-32 md:pt-40">
+      <Container className="pb-20 pt-40 md:pb-32">
         <div
           className="mx-auto flex max-w-[920px] flex-col justify-center gap-4"
           data-aos="fade"
@@ -29,9 +29,7 @@ const BigOrSmallSection = () => {
             you.
           </Typography>
         </div>
-        <div
-          className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2"
-        >
+        <div className="grid grid-cols-1 gap-x-20 gap-y-16 pt-28 text-lg sm:gap-y-28 md:grid-cols-2">
           <ServiceCard
             icon={
               <RocketLaunchIcon className="h-6 w-6 text-white sm:h-[30px] sm:w-[30px]" />
@@ -43,7 +41,9 @@ const BigOrSmallSection = () => {
             in understanding how blockchain can enhance your business.
           </ServiceCard>
           <ServiceCard
-            icon={<ComputerDesktopIcon className="h-[30px] w-[30px] text-white" />}
+            icon={
+              <ComputerDesktopIcon className="h-[30px] w-[30px] text-white" />
+            }
             title="Web2 Platforms"
             large
           >

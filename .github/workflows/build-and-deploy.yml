@@ -1,0 +1,79 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+    - main
+
+  workflow_dispatch:
+    inputs:
+      aws_account_id:
+        description: 'AWS Account ID'
+        required: true
+        default: '581740341244'
+      s3_bucket_name:
+        description: 'S3 bucket to deploy'
+        required: true
+        default: 'addlandia.com'
+      cf_distribution_id:
+        description: 'CloudFront distribution ID'
+        required: true
+        default: 'E3B9BLLAN5OPLR'
+
+env:
+  AWS_ACCOUNT_ID: ${{ github.event.inputs.aws_account_id || '581740341244' }}
+  S3_BUCKET_NAME: ${{ github.event.inputs.s3_bucket_name || 'addlandia.com' }}
+  CF_DISTRIBUTION_ID: ${{ github.event.inputs.cf_distribution_id || 'E3B9BLLAN5OPLR' }}
+  NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER: ${{ secrets.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER }}
+  NEXT_PUBLIC_VERCEL_GIT_PROVIDER: ${{ secrets.NEXT_PUBLIC_VERCEL_GIT_PROVIDER }}
+  NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG: ${{ secrets.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG }}
+  NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
+  NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
+  NEXT_PUBLIC_SANITY_API_VERSION: ${{ secrets.NEXT_PUBLIC_SANITY_API_VERSION }}
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      run: |
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+        nvm --version
+        nvm install
+        nvm use
+        node --version
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Build Static Site
+      run: |
+        npm run build
+
+    - name: AWS login - Assume AddlandiaCi role
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.ADDLANDIA_AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.ADDLANDIA_AWS_SECRET_ACCESS_KEY }}
+        role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/AddlandiaCiAssumeRole
+        role-duration-seconds: 900
+        aws-region: eu-west-2
+
+    - name: Deploy to S3 bucket
+      run: |
+        aws s3 sync ./out/ s3://$S3_BUCKET_NAME \
+          --delete
+
+    - name: Invalidate CloudFront cache
+      run: |
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ env.CF_DISTRIBUTION_ID }} \
+          --paths "/*"

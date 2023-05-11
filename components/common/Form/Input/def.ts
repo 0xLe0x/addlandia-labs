@@ -4,5 +4,5 @@ export interface FormInputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
   textarea?: boolean;
   className?: string;
-  onChange?: () => void;
+  changeHandler?: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }

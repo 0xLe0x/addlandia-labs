@@ -3,7 +3,7 @@ import Typography from '@/components/common/Typography'
 
 const MissionSection = () => {
   return (
-    <Container className="flex flex-col gap-16 py-28 sm:py-40 lg:gap-32 lg:py-80 xl:flex-row">
+    <Container className="flex flex-col gap-16 py-40 lg:gap-32 lg:py-80 xl:flex-row">
       <div className="flex-grow" data-aos="fade-right">
         <div className="max-w-5xl">
           <Typography variant="h3" className="mb-6">
