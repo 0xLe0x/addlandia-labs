@@ -3,14 +3,21 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline'
-import { useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 import Button from '@/components/common/Button'
 import Container from '@/components/common/Container'
 import FormInput from '@/components/common/Form/Input'
 import Typography from '@/components/common/Typography'
 
+import { NavContext } from './_app'
+
 const ContactUsPage = () => {
+  const [_isNavOpen, setIsNavOpen] = useContext(NavContext)
+  useEffect(() => {
+    setIsNavOpen(false)
+  }, [setIsNavOpen])
+
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
